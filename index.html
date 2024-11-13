@@ -15,9 +15,29 @@
     <link rel="stylesheet" href="css/fonts.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 
 <style>
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, p {
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
 /* General styling */
 .page-header {
     width: 100%;
@@ -37,12 +57,18 @@
     display: flex;
     list-style: none;
     gap: 20px;
+    
 }
 
 .rd-navbar-nav li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    
+}
+@media (min-width: 992px) { /* Adjust the width as needed for your desktop breakpoint */
+  .rd-navbar-nav li a:last-child {
+    margin-right: 30px;
+  }
 }
 
 /* Header Content */
@@ -66,6 +92,7 @@
 
 /* Iframe container */
 .iframe-container {
+  background-color: transparent;
     width: 100%;
     max-width: 1200px;
     margin: 10px auto;
@@ -395,8 +422,18 @@ button[type="submit"] {
 .whatsapp-icon:hover {
     background-color: #128C7E;
 }
+.rd-navbar-nav a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Adjust for better click area */
+}
 
-
+/* Style for active link */
+.rd-navbar-nav .active a {
+    color: darkgoldenrod;
+    border-bottom: 3px solid darkgoldenrod; /* Bold underline */
+    font-weight: bold; /* Optional: Makes the text bold */
+}
 
 </style>
 
@@ -412,44 +449,56 @@ button[type="submit"] {
     <header class="page-header">
       <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar_transparent rd-navbar_boxed" style="background-color: transparent;" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px" data-body-class="rd-navbar-absolute">
-              <div class="rd-navbar-inner rd-navbar-search-wrap" style="border-radius: 100px; background-color: rgb(50, 48, 48); height: 70px; top: 30px;">
+              <div class="rd-navbar-inner rd-navbar-search-wrap" style="display: flex; align-items: center; border-radius: 100px; background-color: rgb(50, 48, 48); height: 70px; top: 30px;">
                   <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
                       <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                      <div style="display: flex; justify-content: center; align-items: center;">
                       <div class="rd-navbar-brand">
                           <a class="brand-name" href="index.html">
-                              <img src="./images/mpf (3).png" alt="Logo" width="200px" height="auto"/>
+                              <img src="./images/mpflogoonly.png" alt="Logo" width="50px" height="auto"/>
                           </a>
                       </div>
+  
+                      <!-- Date and Time Container -->
+                      <div class="navbar-date-time" style="color: white; font-size: 14px; margin-left: 20px; text-align: left;line-height: 20px;">
+                          <div id="current-day"></div>
+                          <div id="current-date-time"></div>
+                      </div>
+                    </div>
                   </div>
-                  <!-- RD Navbar Nav-->
-                  <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
-                      <div class="rd-navbar-search_collapsable">
-                          <ul class="rd-navbar-nav" >
-                              <li class="active" style="color: darkgoldenrod;"><a href="index.html">Home</a></li>
-                              <li><a href="" style="color: darkgoldenrod;">About</a></li>
-                              <li><a href="" style="color: darkgoldenrod;">AML Policy</a></li>
-                              <li><a href="" style="color: darkgoldenrod;">KYC</a></li>
-                          </ul>
+                  
+                  <!-- RD Navbar Nav -->
+                  <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable" >
+                      <div class="rd-navbar-search_collapsable" >
+                        <ul class="rd-navbar-nav">
+                          <li class="active"><a href="./index.html">Home</a></li>
+                          <li><a href="">About</a></li>
+                          <li><a href="">AML Policy</a></li>
+                          <li><a href="">KYC</a></li>
+                      </ul>
+                      
                       </div>
                   </div>
               </div>
           </nav>
       </div>
+  </header>
+  
       <!-- Header Content -->
-      <div class="header-content" style="background-image:url(./images/1234567.jpg); background-repeat: no-repeat; background-size: cover;">
+      <div class="header-content" style="background-image:url(./images/343234546y.png); background-repeat: no-repeat; background-size: cover;">
           <div class="header-text">
             <h4>
               <span style="color: white;">Welcome to</span> 
               <span style="color: goldenrod;">MPF GOLD TRADING LLC</span>
           </h4>
           
-              <p>At MPF GOLD TRADING LLC, we're more than just a trading and bullion retail company – we're your gateway to financial security and wealth preservation. As a full-service bullion and trading firm, we specialize in helping individual investors and traders like you navigate the exciting world of precious metals and other commodities in trading.
+              <p>Your Trusted Partner in Precious Metals Investment
                 </p>
           </div>
           <!-- Iframe Container -->
-          <div class="iframe-container">
-              <iframe src="https://mpfweb.netlify.app/" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
-          </div>
+          <div class="iframe-container" style="background: transparent;">
+            <iframe src="https://mpfweb.netlify.app/" width="100%" height="600px" frameborder="0" allowfullscreen style="background-color: transparent;"></iframe>
+        </div>
       </div>
   </header>
   
@@ -1036,7 +1085,25 @@ button[type="submit"] {
   // Start auto-scrolling when the page loads
   window.onload = startAutoScroll;
 </script>
+<script>
+  function updateTimeDate() {
+      const dayElement = document.getElementById("current-day");
+      const dateTimeElement = document.getElementById("current-date-time");
 
+      const now = new Date();
+      
+      // Get day, formatted date and time
+      const day = now.toLocaleDateString(undefined, { weekday: 'long' });
+      const date = now.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase();
+      const time = now.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', hour12: true });
+
+      dayElement.textContent = day;
+      dateTimeElement.textContent = `${date}  |  ${time}`;
+  }
+
+  // Update time and date every second
+  setInterval(updateTimeDate, 1000);
+</script>
   </body>
 </html>
 
