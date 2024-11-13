@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 /*
 *
@@ -100,7 +101,7 @@ body {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-size: 14px;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	line-height: 1.625;
 	font-weight: 400;
 	color: #41516A;
@@ -145,10 +146,8 @@ hr {
 h1, h2, h3, h4, h5, h6, .heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;	font-weight: 800;
 	color: #41516A;
-	text-transform: uppercase;
 	letter-spacing: .5px;
 }
 
@@ -314,7 +313,6 @@ h6,
 }
 
 .heading-decorated::after {
-	content: '';
 	position: relative;
 	display: block;
 	height: 1px;
@@ -383,8 +381,7 @@ code,
 .code {
 	padding: 1px 5px;
 	border-radius: 0;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	color: #fff;
+	font-family: 'Montserrat', sans-serif;	color: #fff;
 	background: #000;
 }
 
@@ -740,12 +737,10 @@ h2 .label {
 	padding: 12px 25px;
 	font-size: 14px;
 	line-height: 17px;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;	font-weight: 400;
 	letter-spacing: 0;
 	transition: .33s all ease;
 	white-space: normal;
-	text-transform: uppercase;
 	cursor: pointer;
 	text-align: center;
 }
@@ -891,8 +886,7 @@ span.button {
 .button-link {
 	border: 0;
 	padding: 0;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;	font-size: 14px;
 	line-height: 1.4;
 	letter-spacing: .06em;
 	text-decoration: underline;
@@ -955,18 +949,16 @@ span.button {
 }
 
 .box-counter__title {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.3;
 	letter-spacing: .06em;
-	text-transform: uppercase;
+
 	color: #41516A;
 }
 
 .box-counter__wrap > * {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	display: inline;
+	font-family: 'Montserrat', sans-serif;	display: inline;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -1002,7 +994,7 @@ span.button {
 .blurb__title {
 	font-size: 18px;
 	font-weight: 600;
-	text-transform: uppercase;
+
 	line-height: 1.34167;
 	color: #000;
 }
@@ -1666,7 +1658,7 @@ textarea.form-input {
 .table-custom th {
 	padding: 25px 24px;
 	font-weight: 700;
-	text-transform: uppercase;
+
 }
 
 @media (min-width: 768px) {
@@ -1886,10 +1878,9 @@ textarea.form-input {
 }
 
 .list-terms-inline dt {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;	font-size: 14px;
 	letter-spacing: .06em;
-	text-transform: uppercase;
+
 	color: #000;
 }
 
@@ -2165,7 +2156,7 @@ textarea.form-input {
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 400;
-	text-transform: uppercase;
+
 	color: #000;
 	letter-spacing: .04em;
 }
@@ -3142,10 +3133,9 @@ a.thumbnail-classic-title:hover {
 }
 
 .quote-centered__text {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;	font-weight: 400;
 	letter-spacing: .06em;
-	text-transform: uppercase;
+
 }
 
 .quote-centered__text .q {
@@ -3233,7 +3223,7 @@ a.thumbnail-classic-title:hover {
 .quote-default__cite {
 	vertical-align: middle;
 	color: #000;
-	text-transform: uppercase;
+
 	letter-spacing: 1.5px;
 	font-size: 18px;
 }
@@ -3475,7 +3465,7 @@ a.thumbnail-classic-title:hover {
 .snackbars-right {
 	display: inline-block;
 	float: right;
-	text-transform: uppercase;
+
 }
 
 .snackbars-right:hover {
@@ -4722,7 +4712,7 @@ a.thumbnail-classic-title:hover {
 	font-size: 12px;
 	line-height: 16px;
 	letter-spacing: 0.06em;
-	text-transform: uppercase;
+
 	color: #fff;
 }
 
@@ -5237,8 +5227,7 @@ a.thumbnail-classic-title:hover {
 	font-size: 16px;
 	line-height: 50px;
 	font-weight: 300;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	background-color: #f8f8f8;
+	font-family: 'Montserrat', sans-serif;	background-color: #f8f8f8;
 	border: 1px solid #f8f8f8;
 	color: #888;
 	text-align: center;
@@ -5917,8 +5906,7 @@ section {
 	display: inline-block;
 	font-size: 400px;
 	font-weight: 800;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	line-height: .668;
+	font-family: 'Montserrat', sans-serif;	line-height: .668;
 	color: inherit;
 	opacity: .02;
 	pointer-events: none;
@@ -8626,7 +8614,7 @@ h4 + .owl-carousel {
 
 .rd-navbar .rd-navbar-nav > li > a {
 	font-size: 15px;
-	line-height: 1.25;
+	line-height: 1.28;
 	font-weight: 600;
 	letter-spacing: .05em;
 }
@@ -8647,7 +8635,7 @@ h4 + .owl-carousel {
 	font-weight: 300;
 	text-transform: none;
 	line-height: 1.2;
-	color: #fff;
+	color: #41516A;
 }
 
 .rd-navbar-fullwidth .rd-navbar-nav > .rd-navbar-submenu .rd-navbar-dropdown,
@@ -9444,7 +9432,7 @@ h4 + .owl-carousel {
 .rd-navbar-sidebar .rd-navbar-nav > li > a,
 .rd-navbar-sidebar .rd-navbar-nav > li > a:active,
 .rd-navbar-sidebar .rd-navbar-nav > li > a:focus {
-	color: #000;
+	color: #fff;
 }
 
 .rd-navbar-static .rd-navbar-nav > li > a:hover,
@@ -9474,7 +9462,7 @@ h4 + .owl-carousel {
 	content: '\f107';
 	position: relative;
 	display: inline-block;
-	font: 400 14px "FontAwesome";
+	font: 400 14px "Montesserat";
 	text-align: center;
 	transition: 0.4s all ease;
 	z-index: 2;
@@ -9911,7 +9899,7 @@ h4 + .owl-carousel {
 
 .rd-navbar-static .rd-navbar-nav > li {
 	margin-top: 13px;
-	padding: 0 13px;
+	padding: 0 0px;
 }
 
 .rd-navbar-static .rd-navbar-nav > li.focus > a {
@@ -11723,12 +11711,11 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .rd-search-results-live .search-quick-result {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;	font-size: 16px;
 	font-weight: 700;
 	line-height: 30px;
 	letter-spacing: .06em;
-	text-transform: uppercase;
+
 	color: #41516A;
 }
 
@@ -11782,12 +11769,11 @@ html.boxed .rd-navbar--is-clone {
 	padding: 5px 25px;
 	border-radius: 3px;
 	border: 1px solid #fff;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;	font-size: 13px;
 	font-weight: 400;
 	color: white;
 	letter-spacing: .06em;
-	text-transform: uppercase;
+	
 	text-align: center;
 }
 
@@ -11960,6 +11946,7 @@ html.boxed .rd-navbar--is-clone {
 	bottom: 15px;
 	width: 50px;
 	height: 50px;
+	border-radius: 50%;
 	font-size: 20px;
 	line-height: 50px;
 	overflow: hidden;
@@ -11977,12 +11964,12 @@ html.boxed .rd-navbar--is-clone {
 
 .ui-to-top, .ui-to-top:active, .ui-to-top:focus {
 	color: #fff;
-	background: #66d7e6;
+	background: darkgoldenrod;
 }
 
 .ui-to-top:hover {
-	color: #fff;
-	background: #000;
+	color: white;
+	background:#775703;
 }
 
 .ui-to-top:focus {
@@ -12729,8 +12716,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	display: block;
 	white-space: pre;
 	padding: 4px 12px;
-	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;	font-size: 12px;
 }
 
 .lg-outer .lg-dropdown a:hover {
@@ -13800,8 +13786,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	justify-content: space-between;
 	margin-left: -12px;
 	margin-right: -12px;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;	font-weight: 400;
 	letter-spacing: .06em;
 }
 
@@ -13968,12 +13953,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .progress-bar-circle-title {
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.4;
 	letter-spacing: .06em;
-	text-transform: uppercase;
 	color: #41516A;
 }
 
@@ -15038,8 +15021,7 @@ button.swiper-pagination-bullet {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	line-height: .4;
+	font-family: 'Montserrat', sans-serif;	line-height: .4;
 	letter-spacing: .06em;
 	text-shadow: 10px 20px 35px rgba(0, 0, 0, 0.8);
 	color: #fff;
@@ -15348,7 +15330,7 @@ button.swiper-pagination-bullet {
 	color: #fff;
 	text-align: center;
 	vertical-align: middle;
-	text-transform: uppercase;
+
 	transition: .3s all ease;
 	background-color: #41516A;
 }
@@ -15788,7 +15770,7 @@ button.swiper-pagination-bullet {
 .rdc-table_day {
 	color: #888;
 	padding: 5px 0;
-	text-transform: uppercase;
+	
 	font-size: 18px;
 	font-weight: 300;
 	text-align: center;
@@ -17684,8 +17666,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 	content: "•";
 	width: 20px;
 	height: 20px;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-size: 6px;
+	font-family: 'Montserrat', sans-serif;	font-size: 6px;
 	line-height: 20px;
 	text-align: center;
 	color: black;
