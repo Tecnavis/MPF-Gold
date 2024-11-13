@@ -717,6 +717,46 @@ button[type="submit"] {
     border: none;
   }
 
+
+/* Contact Icon Link */
+.contact-iconim {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+
+/* Icon Image */
+.contact-iconim-image {
+  width: 20px; /* Adjust size as needed */
+  height: 20px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* Contact Text */
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contact Title */
+.contact-title {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Contact Description */
+.contact-description {
+  font-size: 12px;
+  margin: 0;
+}
 </style>
 
 
@@ -1139,22 +1179,30 @@ button[type="submit"] {
         </form>
 
         <!-- Contact Buttons -->
-        <div class="contact-icons">
+        <div class="contact-icons" style="display: flex; justify-content: space-evenly;align-items: center;">
           <a href="https://wa.me/1234567890" class="contact-icon" style="background-color: #3d956d; color: white; border-radius: 25px;">
             <span class="icon fa fa-whatsapp" style="color: white;"></span> WhatsApp
           </a>
-          <a href="tel:+1234567890" class="contact-icon">
-            <span class="icon fa fa-phone"></span> Phone
+          <a href="tel:+1234567890" class="contact-iconim" style="margin-left: 20px;">
+            <img src="./images/phone-call.png" alt="Phone Icon" class="contact-iconim-image">
+            <div class="contact-text">
+              <h5 class="contact-title">Call Us</h5>
+              <p class="contact-description" style="color: #b28b09;">+1 234 567 890</p>
+            </div>
           </a>
-          <a href="mailto:example@example.com" class="contact-icon">
-            <span class="icon fa fa-envelope"></span> Email Us
+          <a href="mailto:example@example.com" class="contact-iconim" style="margin-left: -30px;">
+            <img src="./images//email (1).png" alt="Email Icon" class="contact-iconim-image">
+            <div class="contact-text">
+              <h5 class="contact-title">Email Us</h5>
+              <p class="contact-description" style="color: #b28b09;">example@example.com</p>
+            </div>
           </a>
         </div>
       </div>
 
       <!-- Right Side: Map -->
       <div class="contact-right">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.929522339618!2d55.296025641521126!3d25.2729561712313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f435b09c1968b%3A0x4bd1bc9e50a2fa69!2sMPF%20Gold%20Trading%20LLC!5e0!3m2!1sen!2sus!4v1731536173131!5m2!1sen!2sus" width="400" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.929522339618!2d55.296025641521126!3d25.2729561712313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f435b09c1968b%3A0x4bd1bc9e50a2fa69!2sMPF%20Gold%20Trading%20LLC!5e0!3m2!1sen!2sus!4v1731536173131!5m2!1sen!2sus"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
