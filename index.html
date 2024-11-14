@@ -757,6 +757,10 @@ button[type="submit"] {
   font-size: 12px;
   margin: 0;
 }
+
+.hide123{
+  display: none;
+}
 </style>
 
 
@@ -931,40 +935,38 @@ button[type="submit"] {
               <span style="color: goldenrod;">Values</span>
           </h4>
           
-            <div class="card-body d-flex flex-wrap" >
-              <!-- Left Column Cards -->
-              <div class="col-12 col-md-6">
-                <div class="card mb-3 hover-card">
-                  <div class="card-body">
-                    <h5 class="card-title">	Unbeatable Pricing</h5>
-                    <p class="card-text">Our competitive rates ensure you get the most value for your investment.</p>
-                  </div>
-                </div>
-                <div class="card mb-3 hover-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Expert Market Analysis</h5>
-                    <p class="card-text">Stay ahead with our cutting-edge insights and forecasts.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Right Column Cards -->
-              <div class="col-12 col-md-6">
-                <div class="card mb-3 hover-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Personalized Service</h5>
-                    <p class="card-text">Tailored solutions for your unique investment goals.</p>
-                  </div>
-                </div>
-                <div class="card mb-3 hover-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Secure Transactions</h5>
-                    <p class="card-text">Your peace of mind and security is our top priority.
-
-</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="card-body d-flex flex-wrap">
+  <!-- Left Column Cards -->
+  <div class="col-12 col-md-6">
+    <div class="card mb-3 hover-card" data-target="#unbeatablePricing">
+      <div class="card-body">
+        <h5 class="card-title">Unbeatable Pricing</h5>
+        <p class="card-text">Our competitive rates ensure you get the most value for your investment.</p>
+      </div>
+    </div>
+    <div class="card mb-3 hover-card" data-target="#expertMarketAnalysis">
+      <div class="card-body">
+        <h5 class="card-title">Expert Market Analysis</h5>
+        <p class="card-text">Stay ahead with our cutting-edge insights and forecasts.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Right Column Cards -->
+  <div class="col-12 col-md-6">
+    <div class="card mb-3 hover-card" data-target="#personalizedService">
+      <div class="card-body">
+        <h5 class="card-title">Personalized Service</h5>
+        <p class="card-text">Tailored solutions for your unique investment goals.</p>
+      </div>
+    </div>
+    <div class="card mb-3 hover-card" data-target="#secureTransactions">
+      <div class="card-body">
+        <h5 class="card-title">Secure Transactions</h5>
+        <p class="card-text">Your peace of mind and security is our top priority.</p>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
@@ -973,7 +975,7 @@ button[type="submit"] {
   </section>
   
 
-  <section class="section-md bg-default">
+  <section id="unbeatablePricing" class="section-md bg-default hide123">
     <div class="container">
      
       <div class="row justify-content-center align-items-center">
@@ -1004,7 +1006,7 @@ button[type="submit"] {
   </section>
 
 
-   <section class="section-md bg-default">
+  <section id="expertMarketAnalysis" class="section-md bg-default hide123">
     <div class="container">
      
       <div class="row justify-content-center align-items-center">
@@ -1021,6 +1023,9 @@ button[type="submit"] {
         </div>
         <div class="col-md-5 ml-5">
           <div class="stack">
+            
+            <img src="./images/whychooseus/price.jpeg" width="250" height="180">
+            <img src="./images/whychooseus/service.png" width="250" height="180">
             <img src="./images/whychooseus/market.jpg" width="250" height="180">
             
 
@@ -1032,7 +1037,7 @@ button[type="submit"] {
   </section>
 
 
-   <section class="section-md bg-default">
+  <section id="personalizedService" class="section-md bg-default hide123">
     <div class="container">
      
       <div class="row justify-content-center align-items-center">
@@ -1049,6 +1054,8 @@ button[type="submit"] {
         </div>
         <div class="col-md-5 ml-5">
           <div class="stack">
+            <img src="./images/whychooseus/goldbars.jpg" width="250" height="180">
+            <img src="./images/whychooseus/market.jpg" width="250" height="180">
             <img src="./images/whychooseus/price.jpeg" width="250" height="180">
 
             
@@ -1061,7 +1068,7 @@ button[type="submit"] {
   </section>
 
 
-    <section class="section-md bg-default">
+  <section id="secureTransactions" class="section-md bg-default hide123">
     <div class="container">
      
       <div class="row justify-content-center align-items-center">
@@ -1078,6 +1085,8 @@ button[type="submit"] {
         </div>
         <div class="col-md-5 ml-5">
           <div class="stack">
+            <img src="./images/whychooseus/market.jpg" width="250" height="180">
+            <img src="./images/whychooseus/price.jpeg" width="250" height="180">
             <img src="./images/whychooseus/service.png" width="250" height="180">
             
 
@@ -1431,6 +1440,27 @@ button[type="submit"] {
 
   // Update time and date every second
   setInterval(updateTimeDate, 1000);
+</script>
+
+<script>
+
+document.querySelectorAll('.hover-card').forEach(card => {
+  card.addEventListener('click', function() {
+    const targetId = this.getAttribute('data-target');
+    
+    // Hide all sections
+    document.querySelectorAll('.hide123').forEach(section => {
+      section.style.display = 'none';
+    });
+    
+    // Show the selected section
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      targetSection.style.display = 'block';
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 </script>
   </body>
 </html>
