@@ -832,6 +832,23 @@ button[type="submit"] {
   }
 }
 
+.opening-hours {
+            
+            max-width: 300px;
+            border-collapse: collapse;
+            border: none;
+            font-size: 14px;
+        }
+        .opening-hours th, .opening-hours td {
+            border: none;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .opening-hours th {
+            font-weight: bold;
+        }
+
 </style>
 
 
@@ -928,14 +945,27 @@ button[type="submit"] {
             <div style="margin-top: 15px;">
               <h5>Address</h5>
               <p>	Shop 1 Al Dahagaya 5, Next to Bin Yudh Mosque,<br> Gold Souq Gate No 3, Deira, Dubai</p>
-            </div>
-            <div style="margin-top: 15px;">
-              <h5> 	Opening Hours</h5>
-             
-	Monday to Thursday 10 AM to 10 PM<br>
-	Friday 4 PM to 10 AM <br>
-	Saturday to Sunday 10 AM to 10 PM
-            </div>
+            </div><br>
+            <h5>Opening Hours</h5>
+    <table class="opening-hours">
+        <!-- <tr>
+            <th>Day</th>
+            <th>Time</th>
+        </tr> -->
+        <tr>
+            <td>Monday to Thursday</td>
+            <td>10 AM to 10 PM</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>4 PM to 10 AM</td>
+        </tr>
+        <tr>
+            <td>Saturday to Sunday</td>
+            <td>10 AM to 10 PM</td>
+        </tr>
+    </table>
+
           </div>
         </div>
         <div class="col-md-5 ml-5">
