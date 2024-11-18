@@ -761,6 +761,77 @@ button[type="submit"] {
 .hide123{
   display: none;
 }
+
+
+
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: goldenrod;
+}
+
+.modal-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 </style>
 
 
@@ -808,9 +879,9 @@ button[type="submit"] {
                       <div class="rd-navbar-search_collapsable" >
                         <ul class="rd-navbar-nav">
                           <li class="active"><a href="./index.html">Home</a></li>
-                          <li><a href="">About</a></li>
-                          <li><a href="">AML Policy</a></li>
-                          <li><a href="">KYC</a></li>
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#product">Products</a></li>
+                          <li><a href="#contact">Contact</a></li>
                       </ul>
                       
                       </div>
@@ -841,31 +912,29 @@ button[type="submit"] {
 
   <section class="section-md bg-default">
     <div class="container">
-      <h4 class="heading-decorated  mb-5 ml-5">
+      <h4 class="heading-decorated mb-5 ml-5">
         <span style="color: rgb(15, 14, 14);">Our</span> 
         <span style="color: goldenrod">Store</span>
-    </h4>
-    
+      </h4>
+  
       <div class="row justify-content-center align-items-center">
         <div class="col-md-8 col-lg-6">
           <div class="card mb-4">
-            <!-- Bootstrap card-->
-            <div >
+            <div>
               <p>
                 At MPF GOLD TRADING LLC, we're more than just a trading and bullion retail company – we're your gateway to financial security and wealth preservation. As a full-service bullion and trading firm, we specialize in helping individual investors and traders like you navigate the exciting world of precious metals and other commodities in trading.
               </p>
             </div>
             <div style="margin-top: 15px;">
               <h5>Address</h5>
-              <p>
-                address
-              </p>
+              <p>	Shop 1 Al Dahagaya 5, Next to Bin Yudh Mosque,<br> Gold Souq Gate No 3, Deira, Dubai</p>
             </div>
             <div style="margin-top: 15px;">
-              <h5>Program</h5>
-              <p>
-                sdfsg<br>safsdgf<br>asfvdfb
-              </p>
+              <h5> 	Opening Hours</h5>
+             
+	Monday to Thursday 10 AM to 10 PM<br>
+	Friday 4 PM to 10 AM <br>
+	Saturday to Sunday 10 AM to 10 PM
             </div>
           </div>
         </div>
@@ -875,105 +944,96 @@ button[type="submit"] {
             <img src="./images/HowtoBuyGoldBarsGettyImages-1689908174-dd1c5db2500f4b62a6620a1749beee7d.jpg" width="250" height="180">
             <img src="./images/whychooseus/goldbars.jpg" width="250" height="180">
             <img src="./images/whychooseus/goldbars.jpg" width="250" height="180">
-
           </div>
-         
         </div>
       </div>
     </div>
   </section>
   
-
-  <section class="section-md bg-gray-lighter text-center decor-text" style="background-color: white;">
+  <!-- Divider Line -->
+  <div style="height: 2px; background-color: goldenrod; margin: 20px auto; width: 50%;"></div>
+  
+  <section class="section-md bg-gray-lighter text-center decor-text" id="about" style="background-color: white;">
     <div class="container">
       <!-- Heading and Description Section -->
       <div class="row align-items-start">
-        <!-- Heading on the Left -->
         <div class="col-md-6 col-sm-12 text-md-start text-center">
           <h4 class="heading-decorated">
             <span style="color: rgb(15, 14, 14);">Trusted Gold Bullion:</span>
             <span style="color: goldenrod; font-size: x-large;"> Secure Investment, Purity & Value</span>
-        </h4>
-                </div>
-        <!-- Description on the Right -->
+          </h4>
+        </div>
         <div class="col-md-6 col-sm-12 text-md-start text-center">
           <p class="card-text" style="text-align: left;">
             Founded on the principles of integrity and expertise, MPF GOLD TRADING LLC has been a beacon of trust in the precious metals industry for over six years. Our journey began with a simple mission: to make bullion trading accessible, transparent, and rewarding for individual traders and investor.
           </p>
         </div>
       </div>
-  
       <!-- Mission and Vision Section -->
       <div class="row row-30 justify-content-center">
         <div class="col-sm-8 col-md-4">
           <div class="card-wrapper456">
             <div class="card456">
-                <div class="iconimage" style="background-image: url('./images/target.png');"></div>
-                <div>
-                    <h5 style="color: #b28b09;">Our Mission</h5>
-                    <p style="font-size: small;">Our mission at MPF Gold Trading is to provide secure, transparent gold bullion investments that protect wealth and promote financial stability.</p>
-                </div>
+              <div class="iconimage" style="background-image: url('./images/target.png');"></div>
+              <div>
+                <h5 style="color: #b28b09;">Our Mission</h5>
+                <p style="font-size: small;">Our mission at MPF Gold Trading is to provide secure, transparent gold bullion investments that protect wealth and promote financial stability.</p>
+              </div>
             </div>
-        </div>
-        <div class="card-wrapper456">
-          <div class="card456">
+          </div>
+          <div class="card-wrapper456">
+            <div class="card456">
               <div class="iconimage" style="background-image: url('./images/shooting.png');"></div>
               <div>
-                  <h5 style="color: #b28b09;">Our Vision</h5>
-                  <p style="font-size: small;">Our vision is to be a global leader in gold bullion trading, fostering trust and excellence while empowering clients to achieve financial independence.</p>
+                <h5 style="color: #b28b09;">Our Vision</h5>
+                <p style="font-size: small;"> To become the world’s premier choice for gold bullion, inspiring confidence and empowering financial growth for businesses and individuals alike through unmatched trust, innovation, and excellence.</p>
               </div>
+            </div>
           </div>
-      </div>
         </div>
-        
-  
         <!-- Core Values Section -->
         <div class="col-sm-10 col-md-8">
           <div class="card core-values-card">
             <h4 class="heading-decorated text-center">
-              <span style="color: black;">Our Core</span> 
-              <span style="color: goldenrod;">Values</span>
-          </h4>
-          
-        <div class="card-body d-flex flex-wrap">
-  <!-- Left Column Cards -->
-  <div class="col-12 col-md-6">
-    <div class="card mb-3 hover-card" data-target="#unbeatablePricing">
-      <div class="card-body">
-        <h5 class="card-title">Unbeatable Pricing</h5>
-        <p class="card-text">Our competitive rates ensure you get the most value for your investment.</p>
-      </div>
-    </div>
-    <div class="card mb-3 hover-card" data-target="#expertMarketAnalysis">
-      <div class="card-body">
-        <h5 class="card-title">Expert Market Analysis</h5>
-        <p class="card-text">Stay ahead with our cutting-edge insights and forecasts.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Right Column Cards -->
-  <div class="col-12 col-md-6">
-    <div class="card mb-3 hover-card" data-target="#personalizedService">
-      <div class="card-body">
-        <h5 class="card-title">Personalized Service</h5>
-        <p class="card-text">Tailored solutions for your unique investment goals.</p>
-      </div>
-    </div>
-    <div class="card mb-3 hover-card" data-target="#secureTransactions">
-      <div class="card-body">
-        <h5 class="card-title">Secure Transactions</h5>
-        <p class="card-text">Your peace of mind and security is our top priority.</p>
-      </div>
-    </div>
-  </div>
-</div>
+              <span style="color: black;">Our Core </span> 
+              <span style="color: goldenrod;">Competencies</span>
+            </h4>
+            <div class="card-body d-flex flex-wrap">
+              <div class="col-12 col-md-6">
+                <div class="card mb-3 hover-card" data-target="#unbeatablePricing">
+                  <div class="card-body">
+                    <h5 class="card-title">Unbeatable Pricing</h5>
+                    <p class="card-text">Our competitive rates ensure you get the most value for your investment.</p>
+                  </div>
+                </div>
+                <div class="card mb-3 hover-card" data-target="#expertMarketAnalysis">
+                  <div class="card-body">
+                    <h5 class="card-title">Expert Market Analysis</h5>
+                    <p class="card-text">Stay ahead with our cutting-edge insights and forecasts.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card mb-3 hover-card" data-target="#personalizedService">
+                  <div class="card-body">
+                    <h5 class="card-title">Personalized Service</h5>
+                    <p class="card-text">Tailored solutions for your unique investment goals.</p>
+                  </div>
+                </div>
+                <div class="card mb-3 hover-card" data-target="#secureTransactions">
+                  <div class="card-body">
+                    <h5 class="card-title">Secure Transactions</h5>
+                    <p class="card-text">Your peace of mind and security is our top priority.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
   </section>
-  
+    
 
   <section id="unbeatablePricing" class="section-md bg-default hide123">
     <div class="container">
@@ -1100,54 +1160,54 @@ button[type="submit"] {
 
       
 <!-- Portfolio Section -->
-<section class="section-md bg-default text-center">
+<section class="section-md bg-default text-center" id="product">
   <div class="container">
     <h4 class="heading-decorated" style="margin: 60px;">
       <span style="color: black;">Our</span> 
       <span style="color: goldenrod;">Products</span>
-  </h4>
-  
+    </h4>
+
     <!-- Scrollable Wrapper -->
     <div class="scroll-wrapper" style="margin-left: 50px;">
       <!-- Scroll Container -->
-      <div id="scroll-container" class="scroll-container">
+      <div id="scroll-container" class="scroll-container d-flex">
         <!-- Card 1 -->
-        <div class="card123" style=" width: 300px;" >
-          <a class="img-thumbnail-variant-3" href="#">
-            <img src="./images/goldbar/gold7.png" alt="BlueLine" / style="margin-left: 50px;">
+        <div class="card123" style="width: 300px;" onclick="openModal('gold7.png', 'Kilo Bar', 'Purity: 999.9')">
+          <a class="img-thumbnail-variant-3" href="javascript:void(0);">
+            <img src="./images/goldbar/gold7.png" alt="Kilo Bar" style="margin-left: 50px;">
             <div class="caption">
-              <p class="heading-5">Gold Bar</p>
-              <p class="small">999  1 KG</p>
+              <p class="heading-5">Kilo Bar</p>
+              <p class="small">999.9</p>
             </div>
           </a>
         </div>
         <!-- Card 2 -->
-        <div class="card123" style="width: 300px;">
-          <a class="img-thumbnail-variant-3" href="#">
-            <img src="./images/goldbar/gold10.png" alt="Kreative Co." / style="margin-left: 50px;">
+        <div class="card123" style="width: 300px;" onclick="openModal('gold10.png', 'Kilo Bar', 'Purity: 995.0')">
+          <a class="img-thumbnail-variant-3" href="javascript:void(0);">
+            <img src="./images/goldbar/gold10.png" alt="Kilo Bar" style="margin-left: 50px;">
             <div class="caption">
-              <p class="heading-5">Gold Bar</p>
-              <p class="small">995 1 KG</p>
+              <p class="heading-5">Kilo Bar</p>
+              <p class="small">995.0</p>
             </div>
           </a>
         </div>
         <!-- Card 3 -->
-        <div class="card123" style="width: 300px;">
-          <a class="img-thumbnail-variant-3" href="#">
-            <img src="./images/goldbar/gold2.png" alt="Architex" / style="margin-left: 50px;">
+        <div class="card123" style="width: 300px;" onclick="openModal('gold2.png', 'TT Bar', 'Purity: 999.9')">
+          <a class="img-thumbnail-variant-3" href="javascript:void(0);">
+            <img src="./images/goldbar/gold2.png" alt="TT Bar" style="margin-left: 50px;">
             <div class="caption">
-              <p class="heading-5">TT bar</p>
-              <p class="small"></p>
+              <p class="heading-5">TT Bar</p>
+              <p class="small">999.9</p>
             </div>
           </a>
         </div>
         <!-- Card 4 -->
-        <div class="card123" style="width: 300px;">
-          <a class="img-thumbnail-variant-3" href="#">
-            <img src="./images/goldbar/gold5.png" alt="Colorful Studios" / style="margin-left: 50px;">
+        <div class="card123" style="width: 300px;" onclick="openModal('gold5.png', '1 Gm Gold Bar', 'Purity: 999.9')">
+          <a class="img-thumbnail-variant-3" href="javascript:void(0);">
+            <img src="./images/goldbar/gold5.png" alt="1 Gm Gold Bar" style="margin-left: 50px;">
             <div class="caption">
-              <p class="heading-5">Gold Bar</p>
-              <p class="small">22k 1Gm</p>
+              <p class="heading-5">1 Gm Gold Bar</p>
+              <p class="small">999.9</p>
             </div>
           </a>
         </div>
@@ -1155,6 +1215,17 @@ button[type="submit"] {
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+<div id="productModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="Product Image" class="modal-image">
+    <h4 id="modalTitle" class="modal-title"></h4>
+    <p id="modalDescription" class="modal-description"></p>
+  </div>
+</div>
+
 
 
 
@@ -1245,7 +1316,7 @@ button[type="submit"] {
 
 
       <!-- Contact Section -->
-<section class="contact-section bg-default">
+<section class="contact-section bg-default" id="contact">
   <div class="container">
     <div class="contact-card">
       <!-- Left Side: Contact Form -->
@@ -1278,21 +1349,21 @@ button[type="submit"] {
 
         <!-- Contact Buttons -->
         <div class="contact-icons" style="display: flex; justify-content: space-evenly;align-items: center;">
-          <a href="https://wa.me/1234567890" class="contact-icon" style="background-color: #3d956d; color: white; border-radius: 25px;">
+          <a href="https://wa.me/971581416969" class="contact-icon" style="background-color: #3d956d; color: white; border-radius: 25px;">
             <span class="icon fa fa-whatsapp" style="color: white;"></span> WhatsApp
           </a>
           <a href="tel:+1234567890" class="contact-iconim" style="margin-left: 20px;">
             <img src="./images/phone-call.png" alt="Phone Icon" class="contact-iconim-image">
             <div class="contact-text">
               <h5 class="contact-title">Call Us</h5>
-              <p class="contact-description" style="color: #b28b09;">+1 234 567 890</p>
+              <p class="contact-description" style="color: #b28b09;">+971565556232</p>
             </div>
           </a>
-          <a href="mailto:example@example.com" class="contact-iconim" style="margin-left: -30px;">
+          <a href="mailto:info.mpfgold@kfk-capital.com" class="contact-iconim" style="margin-left: -30px;">
             <img src="./images//email (1).png" alt="Email Icon" class="contact-iconim-image">
             <div class="contact-text">
               <h5 class="contact-title">Email Us</h5>
-              <p class="contact-description" style="color: #b28b09;">example@example.com</p>
+              <p class="contact-description" style="color: #b28b09;">info.mpfgold@kfk-capital.com</p>
             </div>
           </a>
         </div>
@@ -1311,18 +1382,19 @@ button[type="submit"] {
         <div class="container">
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
             <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
-              <img src="./images/mpf.png" alt="" style="height: 100px;">
+              <img src="./images/mpf (3).png" alt="" style="height: 80px;">
               <!-- <h6>About</h6> -->
               <p>
-                MPF Gold specializes in trusted gold bullion solutions, offering secure investment options tailored to meet your financial goals. With industry expertise, we ensure the highest quality and transparency in every transaction, making gold investing straightforward and reliable.                </p>
+                MPF Gold specializes in trusted gold bullion solutions, offering secure investment options tailored to meet your financial goals.        </p>
             </div>
             <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
               <h6>Navigation</h6>
               <ul class="list-xxs">
-                <li><a href="about.html">About us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="">About us</a></li>
                 <li><a href="#">Our Products </a></li>
-                <li><a href="#">Aml policy</a></li>
-                <li><a href="#">Know Your Client(kyc)</a></li>
+                <li><a href="#">contact</a></li>
+                
                 
                 <!-- <li><a href="#">Our Partners</a></li> -->
               </ul>
@@ -1335,7 +1407,7 @@ button[type="submit"] {
                 <li>
                   <dl class="list-terms-minimal">
                     <dt>Address</dt>
-                    <dd>4578 Marmora Road, Glasgow, D04 89GR</dd>
+                    <dd>Shop 1 Al Dahagaya 5, Next to Bin Yudh Mosque, Gold Souq Gate No 3, Deira, Dubai</dd>
                   </dl>
                 </li>
                 <li>
@@ -1343,8 +1415,8 @@ button[type="submit"] {
                     <dt>Phones</dt>
                     <dd>
                       <ul class="list-semicolon">
-                        <li><a href="tel:#">(800) 123-0045</a></li>
-                        <li><a href="tel:#">(800) 123-0045</a></li>
+                        <li><a href="tel:+971565556232">+971565556232</a></li>
+                        <!-- <li><a href="tel:#">(800) 123-0045</a></li> -->
                       </ul>
                     </dd>
                   </dl>
@@ -1352,15 +1424,15 @@ button[type="submit"] {
                 <li>
                   <dl class="list-terms-minimal">
                     <dt>E-mail</dt>
-                    <dd><a href="mailto:#">info@demolink.org</a></dd>
+                    <dd><a href="mailto:info.mpfgold@kfk-capital.com">info.mpfgold@kfk-capital.com</a></dd>
                   </dl>
                 </li>
-                <li>
+                <!-- <li>
                   <dl class="list-terms-minimal">
                     <dt>Opening Hours:</dt>
                     <dd>Mn-Fr: 10 am-8 pm</dd>
                   </dl>
-                </li>
+                </li> -->
               </ul>
             </div>
 
@@ -1369,32 +1441,33 @@ button[type="submit"] {
               <div class="app-links">
         <a href="https://play.google.com/store" target="_blank">
             <img src="./images/appicons/pla.png" alt="Play Store" width="120">
-        </a>
+        </a><br>
         <a href="https://www.apple.com/app-store/" target="_blank">
             <img src="./images/appicons/app.png" alt="App Store" width="120">
         </a>
     </div>
             </div>
-
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer-corporate bg-gray-darkest">
-        <div class="container">
-          <div class="footer-corporate__inner">
-            <p class="rights"><span>Element</span><span>&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Designed  and developed by <a href="https://www.tecnavis.com/">Tecnavis</a></p>
-            <ul class="list-inline-xxs">
+            <!-- <ul class="list-inline-xxs">
               <li><a class="icon icon-xxs icon-primary fa fa-facebook" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-twitter" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-google-plus" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-vimeo" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-youtube" href="#"></a></li>
               <li><a class="icon icon-xxs icon-primary fa fa-pinterest" href="#"></a></li>
-            </ul>
+            </ul> -->
+
           </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- <footer class="footer-corporate bg-gray-darkest">
+        <div class="container">
+          <div class="footer-corporate__inner">
+            <p class="rights"><span>Element</span><span>&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Designed  and developed by <a href="https://www.tecnavis.com/">Tecnavis</a></p>
+           
+          </div>
+        </div>
+      </footer> -->
     </div>
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
@@ -1461,6 +1534,23 @@ document.querySelectorAll('.hover-card').forEach(card => {
     }
   });
 });
+</script>
+<script>
+  function openModal(imageSrc, title, description) {
+  // Populate modal with product details
+  document.getElementById('modalImg').src = `./images/goldbar/${imageSrc}`;
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalDescription').innerText = description;
+
+  // Show modal
+  document.getElementById('productModal').style.display = 'flex';
+}
+
+function closeModal() {
+  // Hide modal
+  document.getElementById('productModal').style.display = 'none';
+}
+
 </script>
   </body>
 </html>
